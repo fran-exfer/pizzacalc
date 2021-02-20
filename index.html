@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PizzaCalc</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Londrina+Solid&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="img/pizza.png"
+        alt="A beautiful icon of a beautiful pizza"
+      />
+      <h1 class="header__title">PizzaCalc</h1>
+    </header>
+
+    <main class="main">
+      <p class="main__label">Flour (gr)</p>
+      <input
+        class="main__input"
+        type="text"
+        name="flour"
+        id="input-flour"
+        value="250"
+      />
+
+      <p class="main__label">Hidration (%)</p>
+      <input
+        class="main__input"
+        type="text"
+        name="flour"
+        id="input-hidration"
+        value="62"
+      />
+
+      <hr />
+
+      <div class="result">
+        <p><span class="result__highlight" id="res-flour">250gr</span> flour</p>
+        <p><span class="result__highlight" id="res-water">155gr</span> water</p>
+        <p><span class="result__highlight" id="res-salt">5gr</span> salt</p>
+        <p>
+          <span class="result__highlight" id="res-oil">5gr</span> olive oil
+          (optional)
+        </p>
+        <p>
+          <span class="result__highlight" id="res-fresh-yeast">5gr</span>
+          fresh yeast
+        </p>
+        <p>
+          (or
+          <span class="result__highlight" id="res-instant-yeast">1,66gr</span>
+          instant yeast)
+        </p>
+        <br />
+        <p>
+          Aprox. weight of the dough:
+          <span class="result__highlight" id="res-total">410gr</span>
+        </p>
+        <br />
+        <p class="result__neapolitan">
+          (As a reference, a single neapolitan pizza may weight from
+          <span class="result__highlight-neapo">200 to 280 gr</span>. Of course,
+          you can make them bigger. For two persons, for example, you can make
+          them about <span class="result__highlight-neapo">400gr</span>).
+        </p>
+        <br />
+        <p class="result__neapolitan">
+          First rise: <span class="result__highlight-neapo">2 hours</span>,
+          Second rise (after dividing into balls)
+          <span class="result__highlight-neapo">3 hours</span> (24ºC with this
+          amount of yeast).
+        </p>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

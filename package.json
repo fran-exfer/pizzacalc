@@ -1,0 +1,20 @@
+{
+  "name": "pizzacalc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass --watch sass/main.scss css/style.css",
+    "build-sass": "sass sass/main.scss css/style.css --style compressed",
+    "start": "concurrently --kill-others \"live-server\" \"npm run watch-sass\"",
+    "build": "npm run build-sass && copyfiles * css/* img/* -e *.json -e *.md dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.1",
+    "sass": "^1.32.5"
+  }
+}
